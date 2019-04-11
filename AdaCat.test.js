@@ -34,6 +34,11 @@ describe('AdaCat', function() {
       var myCat = new AdaCat('toyota', 'alex')
       expect(myCat.size).to.equal(30)
     })
+
+    it('sets the tiredness attribute to 0', function() {
+      var myCat = new AdaCat('jones', 'alex')
+      expect(myCat.tiredness).to.equal(0)
+    });
   })
 
   describe('#getDescription', function() {
